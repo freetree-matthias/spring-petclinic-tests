@@ -26,12 +26,12 @@ package org.springframework.samples.petclinic.owner;import java.text.ParseExcept
  * @author Juergen Hoeller
  * @author Michael Isvy
  */
-@Component public class PetTypeFormatter 
+@Component public class PetTypeFormatterBadStyle 
     implements        Formatter<PetType> {
 private final PetRepository pets;
 
 
-    @Autowired public                PetTypeFormatter(PetRepository pets) 
+    @Autowired public                PetTypeFormatterBadStyle(PetRepository pets) 
 {
         this.pets=pets;
 }
